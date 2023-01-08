@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="left">
+          <div class="g-form">
+            <img
+              src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+              width="70"
+            />
+            <h3>Create Your Google Form</h3>
+            <form>
+              <input type="text" name="" placeholder="firstname" required />
+              <input type="text" name="" placeholder="lastname" required />
+              <input type="email" name="" placeholder="username" required />
+              <span> you can use letters,numbers & periods </span>
+              <br />
+              <input
+                type="password"
+                name=" "
+                placeholder="password"
+                required
+                id="pwrd"
+              />
+              <input
+                type="password"
+                name=" "
+                placeholder="confirm"
+                required
+                id="cpwrd"
+              />
+              <span>
+                use 8 or more characters with a mix of letters, numbers and
+                symbols
+              </span>
+              <br />
+              <input
+                type="checkbox"
+                name=""
+                class="checkbox"
+                onclick="show()"
+              />
+              &nbsp;Show password
+              <div class="b-links">
+                <a href="#">sign in insted</a>
+                <input type="submit" id="next" valuse="next" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right">
+          <img
+            src="https://www.gizmoconcept.com/wp-content/uploads/2020/10/Google-Account.jpg"
+          />
+        </div>
+      </div>
+    </header>
+    <script type="text/javascript">
+      function show() {
+        var pwrd = document.getElementById("pwrd");
+        var cpwrd = document.getElementById("cpwrd");
+        if (pwrd.type === "password" && cpwrd.type === "password") {
+          pwrd.type = "text";
+          pwrd.type = "text";
+        } else {
+          pwrd.type = "password";
+          pwrd.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>
